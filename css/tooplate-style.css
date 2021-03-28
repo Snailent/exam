@@ -20,9 +20,11 @@ a {
   transition: all 0.2s;
 }
 
-footer a:link, footer a:visited {
-	color: #FFF;
+footer a:link,
+footer a:visited {
+  color: #FFF;
 }
+
 .tm-text-blue {
   color: #00ccfc;
 }
@@ -137,9 +139,28 @@ footer a:link, footer a:visited {
   /* max-width: 575px; */
   min-width: 800px;
 }
+
 .tm-section-1 {
   margin-top: 70px;
-  max-width: 420px;
+}
+
+.tm-section-1 img {
+  width: 100px;
+}
+
+.tm-section-1 .image {
+  margin: 0 auto;
+}
+.tm-section-1 h4 {
+  color: black;
+  text-align: center;
+}
+
+.poke-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 15px 10px;
+
 }
 
 .tm-link:link,
@@ -268,7 +289,7 @@ footer {
 }
 
 .grid figure figcaption,
-.grid figure figcaption > a {
+.grid figure figcaption>a {
   position: absolute;
   top: 0;
   left: 0;
@@ -278,7 +299,7 @@ footer {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.grid figure figcaption>a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -327,6 +348,7 @@ figure.effect-goliath img {
 figure.effect-goliath h2 {
   font-size: 1.3rem;
 }
+
 figure.effect-goliath h2,
 figure.effect-goliath p {
   position: absolute;
@@ -394,7 +416,8 @@ figure.effect-goliath:hover p {
 .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 .form-control:-ms-input-placeholder {
@@ -448,6 +471,7 @@ figure.effect-goliath:hover p {
   height: 100%;
   z-index: 2000;
 }
+
 #loader {
   display: block;
   position: relative;
@@ -460,8 +484,10 @@ figure.effect-goliath:hover p {
   border: 3px solid transparent;
   border-top-color: #3498db;
 
-  -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  -webkit-animation: spin 2s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
 
   z-index: 10001;
 }
@@ -477,8 +503,10 @@ figure.effect-goliath:hover p {
   border: 3px solid transparent;
   border-top-color: #e74c3c;
 
-  -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  -webkit-animation: spin 3s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 3s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 #loader:after {
@@ -492,32 +520,49 @@ figure.effect-goliath:hover p {
   border: 3px solid transparent;
   border-top-color: #f9c922;
 
-  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  -webkit-animation: spin 1.5s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg); /* IE 9 */
-    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
   }
+
   100% {
-    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg); /* IE 9 */
-    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
   }
 }
+
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg); /* IE 9 */
-    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
   }
+
   100% {
-    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg); /* IE 9 */
-    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
   }
 }
 
@@ -528,9 +573,12 @@ figure.effect-goliath:hover p {
   height: 100%;
   background: #222222;
   z-index: 1000;
-  -webkit-transform: translateX(0); /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateX(0); /* IE 9 */
-  transform: translateX(0); /* Firefox 16+, IE 10+, Opera */
+  -webkit-transform: translateX(0);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(0);
+  /* IE 9 */
+  transform: translateX(0);
+  /* Firefox 16+, IE 10+, Opera */
 }
 
 #loader-wrapper .loader-section.section-left {
@@ -543,18 +591,24 @@ figure.effect-goliath:hover p {
 
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
-  -webkit-transform: translateX(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateX(-100%); /* IE 9 */
-  transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
+  -webkit-transform: translateX(-100%);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(-100%);
+  /* IE 9 */
+  transform: translateX(-100%);
+  /* Firefox 16+, IE 10+, Opera */
 
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
-  -webkit-transform: translateX(100%); /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateX(100%); /* IE 9 */
-  transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
+  -webkit-transform: translateX(100%);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(100%);
+  /* IE 9 */
+  transform: translateX(100%);
+  /* Firefox 16+, IE 10+, Opera */
 
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -565,12 +619,16 @@ figure.effect-goliath:hover p {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 .loaded #loader-wrapper {
   visibility: hidden;
 
-  -webkit-transform: translateY(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateY(-100%); /* IE 9 */
-  transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
+  -webkit-transform: translateY(-100%);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateY(-100%);
+  /* IE 9 */
+  transform: translateY(-100%);
+  /* Firefox 16+, IE 10+, Opera */
 
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
@@ -595,6 +653,7 @@ figure.effect-goliath:hover p {
   .tm-site-title {
     font-size: 3rem;
   }
+
   .tm-top-container {
     flex-direction: column-reverse;
   }
@@ -653,7 +712,8 @@ figure.effect-goliath:hover p {
   position: static;
 }
 
-form, p {
+form,
+p {
   margin: 20px;
 }
 
@@ -662,7 +722,8 @@ p.note {
   color: red;
 }
 
-input, textarea {
+input,
+textarea {
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 4px;
@@ -684,38 +745,42 @@ label span {
 }
 
 label.error {
-    color: red;
-    font-size: 1rem;
-    display: block;
-    margin-top: 5px;
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
 }
 
 label.error.fail-alert {
-    border: 2px solid red;
-    border-radius: 4px;
-    line-height: 1;
-    padding: 2px 0 6px 6px;
-    background: #ffe6eb;
+  border: 2px solid red;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 2px 0 6px 6px;
+  background: #ffe6eb;
 }
 
 input.valid.success-alert {
-    border: 2px solid #4CAF50;
-    color: green;
+  border: 2px solid #4CAF50;
+  color: green;
 }
 
-input.error, textarea.error {
-    border: 1px dashed red;
-    font-weight: 300;
-    color: red;
+input.error,
+textarea.error {
+  border: 1px dashed red;
+  font-weight: 300;
+  color: red;
 }
 
-[type="submit"], [type="reset"], button, html [type="button"] {
-    margin-left: 0;
-    border-radius: 0;
-    background: black;
-    color: white;
-    border: none;
-    font-weight: 300;
-    padding: 10px 0;
-    line-height: 1;
+[type="submit"],
+[type="reset"],
+button,
+html [type="button"] {
+  margin-left: 0;
+  border-radius: 0;
+  background: black;
+  color: white;
+  border: none;
+  font-weight: 300;
+  padding: 10px 0;
+  line-height: 1;
 }
